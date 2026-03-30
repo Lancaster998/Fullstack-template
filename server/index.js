@@ -1,5 +1,4 @@
 import express from 'express'
-<<<<<<< HEAD
 import cors from 'cors'
 import dotenv from 'dotenv'
 import Router from './routes/route.js'
@@ -31,15 +30,3 @@ connectDB(process.env.CONNECTION_STRING)
     .catch(err => {
         console.log(err)
     })
-=======
-import cors  from 'cors'
-import dotenv from 'dotenv'
-
-dotenv.config()
-const app = express()
-app.use(cors())
-
-const PORT  = process.env.PORT
-
-app.listen(PORT, () => console.log(`server is running on Port: ${PORT}`))
->>>>>>> accd4aba302847852d1307d5f23b43471228c35b
